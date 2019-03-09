@@ -1,0 +1,865 @@
+body {
+  background-color: #0b2a6d;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #e5edff;
+
+}
+//all nav bar style
+div{
+  //keep this here
+}
+
+
+
+.topnav {
+  box-shadow: 2px 2px 2px #2f1d80;
+  position: fixed;
+  //padding: 20px 20px 20px 20px;
+  z-index: 200;
+  margin: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgb(119, 137, 219, 0.7);
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 25px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+#logo{
+  height: 17px;
+  width: auto;
+}
+
+#subnav a{
+  float: right;
+}
+.topnav a:hover {
+  background-color: rgb(96, 118, 201, 0.7);
+  transition: background 0.5s linear;
+}
+
+.selected {
+  background-color: rgb(64, 93, 201, 0.7);
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 1210px) {
+  /*if screen is 700 pixels wide or smaller, icon is shown*/
+  /*.topnav a:not(.show){
+    display: none;
+  }*/
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+}
+/*displays links vertically when screen is small (when js adds responsive class to nav)*/
+@media screen and (max-width: 1210px) {
+  //.topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive{
+    position: fixed;
+    width: 100%;
+  }
+
+  .topnav #subnav a, .topnav.responsive a.show {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  //expandable part of nav bar transformations
+  .transform{
+    //keep this here
+  }
+
+  .transform {
+    overflow: hidden;
+    width: 100%;
+    height: 0px;
+    -webkit-transition: all 0.5s ease;  
+    -moz-transition: all 0.5s ease;  
+    -o-transition: all 0.5s ease;  
+    -ms-transition: all 0.5s ease;  
+    transition: all 0.5s ease;
+  }
+  #subnav.transform-active {
+    height: 340px;//after transition
+
+  }
+
+}
+// end nav bar style
+
+//types of containers, sections, divs, etc.
+
+	.container {
+		margin-left: auto;
+		margin-right: auto;
+	}
+  
+  .container {
+		width: 70em;
+	}
+
+	.spotlight {
+		//background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+    background-color: rgb(64, 93, 201);
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		height: 100vh;
+		overflow: hidden;
+		//position: relative;
+	}
+
+  
+	.section3amplifier {
+		//background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		height: 100vh;
+		overflow: hidden;
+		position: relative;
+    filter: brightness(100%);
+    background-image: url("https://images.unsplash.com/photo-1513925619563-269fc5fbdd89?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80");
+	}
+
+  	.section4 {
+		//background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		height: 100vh;
+		overflow: hidden;
+		position: relative;
+	}
+
+  .grid {
+    background-position: center center;
+		background-size: 500px;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		height: 100vh;
+		overflow: hidden; 
+  }
+
+  .tsachaptersection{
+		//background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		height: 100vh;
+		overflow: hidden;
+		position: relative;
+    background-image: url("img/mot charter high school.jpg");
+    padding: 10px;
+  }
+
+  .musicsection{
+		//background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		height: 100vh;
+		overflow: hidden;
+		position: relative;
+    filter: brightness(50%);
+    background-image: url("");
+  }
+
+  .newssection{
+		//background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		height: 100vh;
+		overflow: hidden;
+		position: relative;
+    filter: brightness(50%);
+    background-image: url("");
+  }
+
+  .storesection{
+		//background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		height: 100vh;
+		overflow: hidden;
+		position: relative;
+    filter: brightness(50%);
+    background-image: url("");
+
+  }
+
+  .technologyprogramsection1{
+		//background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		height: 100vh;
+		overflow: hidden;
+		position: relative;
+    filter: brightness(100%);
+    background-image: url("img/engineeringlab.jpg");
+    padding: 10px;
+  }
+  .technologyprogramsection2{
+		//background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		height: 100vh;
+		overflow: hidden;
+		position: relative;
+    filter: brightness(100%);
+    background-image: url("img/DSC_1803.jpg");
+    padding: 10px;
+  }
+  .technologyprogramsection3{
+		//background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		height: 100vh;
+		overflow: hidden;
+		position: relative;
+    filter: brightness(100%);
+    background-image: url("img/DSC_1806.jpg");
+    padding: 10px;
+  }
+
+  .toursection{
+    //background-attachment: fixed;
+		background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		height: 100vh;
+		overflow: hidden;
+		position: relative;
+    filter: brightness(50%);
+    background-image: url("");
+  }
+
+  .hometech{
+    background-position: center center;
+		background-size: cover;
+		box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+		height: 100vh;
+		overflow: hidden;
+		position: relative;
+    //filter: brightness(50%);
+    background-image: url("img/engineeringlab.jpg");
+    font-weight: 1em;
+  }
+
+    .blogpost {
+        display: block;
+	      margin: 0 0 1em 0;
+		    //width: 90%;
+        border-style: solid;
+        background-color: rgb(1, 28, 68, 0.7);
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
+        padding-left: 60px;
+
+
+
+    }
+
+
+//end of containers and etc.
+
+
+
+merchimage {
+  display: block;
+  margin: 0 0 1em 0;
+  width: 25%;
+  border-style: solid;
+  background-color: #011c44;
+  padding-top: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+}
+
+
+
+//slideshow stuff
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+	background-attachment: fixed;  
+  //height: 100vh;
+  width: 100%;
+  position: relative;
+  margin: auto;
+	background-position: center center;
+	background-size: cover;
+	box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25);
+	overflow: hidden;
+  object-fit: fill;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Slideshow Caption text */
+.text {
+  color: #f2f2f2;
+  //font-size: 10px;
+  padding: 18px 12px;
+  position: absolute;
+  top: 55%;
+  left: 10%;
+  width: 50%;
+  //height: 20%;
+  text-align: left;
+  font-size:1.5vw;
+  background-color: black;
+  opacity: .75;
+
+}
+.text1 {
+  color: #f2f2f2;
+  //font-size: 10px;
+  padding: 18px 12px;
+  position: absolute;
+  top: 20%;
+  left: 8%;
+  width: 50%;
+  //height: 20%;
+  text-align: left;
+  font-size:1.4vw;
+  background-color: black;
+  opacity: .75;
+
+}
+.text2 {
+  color: #f2f2f2;
+  //font-size: 10px;
+  padding: 18px 12px;
+  position: absolute;
+  top: 20%;
+  right: 8%;
+  width: 22%;
+  //height: 20%;
+  text-align: left;
+  font-size:1.4vw;
+  background-color: black;
+  opacity: .75;
+
+}
+.textlong {
+  color: #f2f2f2;
+  //font-size: 10px;
+  padding: 18px 12px;
+  position: absolute;
+  top: 15%;
+  left: 4%;
+  width: 90%;
+
+  //height: 20%;
+  text-align: left;
+  font-size:1.4vw;
+  background-color: black;
+  opacity: .75;
+
+}
+.textTopL {
+  color: #f2f2f2;
+  //font-size: 10px;
+  padding: 18px 12px;
+  position: absolute;
+  top: 18%;
+  left: 10%;
+  width: 50%;
+  //height: 20%;
+  text-align: left;
+  font-size:7vw;
+  
+
+}
+.textTopR {
+  color: #f2f2f2;
+  //font-size: 10px;
+  padding: 18px 12px;
+  position: absolute;
+  top: 18%;
+  right: 10%;
+  width: 50%;
+  //height: 20%;
+  text-align: right;
+  font-size:7vw;
+  
+
+}
+
+.album1{
+  padding: 18px 12px;
+  position: absolute;
+  top: 18%;
+  right: 38%;
+  width: 20%;
+}
+.album2{
+  padding: 18px 12px;
+  position: absolute;
+  top: 18%;
+  right: 5%;
+  width: 20%;
+}
+.album3{
+  padding: 18px 12px;
+  position: absolute;
+  top: 18%;
+  left: 5%;
+  width: 20%;
+}
+
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 14px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+
+
+}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+/*@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-table100 {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 30px 30px;
+}
+
+.wrap-table100 {
+  width: 1300px;
+}
+
+.merchTable{
+  text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+/*//////////////////////////////////////////////////////////////////
+[ Table ]*/
+/*table {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+}
+
+th, td {
+  font-weight: unset;
+  padding-right: 10px;
+}
+
+.column100 {
+  width: 130px;
+  padding-left: 25px;
+}
+
+.column100.column1 {
+  width: 265px;
+  padding-left: 42px;
+}
+
+.row100.head th {
+  padding-top: 24px;
+  padding-bottom: 20px;
+}
+
+.row100 td {
+  padding-top: 18px;
+  padding-bottom: 14px;
+}
+
+.table100.ver1 td {
+  font-size: 14px;
+  color: #808080;
+  line-height: 1.4;
+}
+
+.table100.ver1 th {
+  font-size: 12px;
+  color: #fff;
+  line-height: 1.4;
+  text-transform: uppercase;
+
+  background-color: #36304a;
+}
+
+.table100.ver1 .row100:hover {
+  background-color: #f2f2f2;
+}
+
+.table100.ver1 .hov-column-ver1 {
+  background-color: #f2f2f2;
+}
+
+.table100.ver1 .hov-column-head-ver1 {
+  background-color: #484848 !important;
+}
+
+.table100.ver1 .row100 td:hover {
+  background-color: #6c7ae0;
+  color: #fff;
+}*/
+
+
+
+////////////////////////////////
+table {
+  width: 100%;
+  background-color: #fff;
+  text-align: center;
+  margin:auto;
+}
+
+th, td {
+  font-weight: unset;
+  padding-right: 10px;
+}
+.t200 {
+  width:              100%;
+}
+.t200, .h200, .c200 {
+  border:             1px solid #00174f;
+  border-collapse:    collapse;
+  padding:            10px 10px 10px 10px;
+  border-style:       dashed;
+  border-color:      #00174f;
+  background-color:#00174f;
+}
+
+tr:hover {
+	background-color: rgb(68, 76, 145, 0.6);
+}
+
+
+
+
+/*tour page INTERACTIVE MAP********************************/
+    .buttonLink{
+      background-color: rgb(119, 137, 219);
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+      width: 200px;
+      margin: auto;
+
+    }
+    a:hover {
+      background-color: rgb(96, 118, 201);
+      transition: background 0.5s linear;
+    }
+
+      .container {
+        max-width: 1170px;
+        width: 100%;
+        margin: 0 auto;
+      }
+      .column {
+        padding: 0 15px;
+      }
+      header {
+        padding: 30px 0;
+        background: #00174f;
+        text-align: center;
+        text-transform: uppercase;
+
+      }
+      .map-wrapper {
+        background: #5449eb;
+      }
+      .map {
+        position: relative;
+        max-width: 1200px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+      }
+      .map__img {
+        display: none;
+      }
+      .map__hotspot {
+        display: block;
+        background: #c9c8ff;
+        border: 2px solid #fff;
+        cursor: pointer;
+        -webkit-transition: background .3s linear;
+                transition: background .3s linear;
+        text-decoration: none;
+        color: #011852;
+      }
+
+      /*location of dots*/
+      #hotspot1 {/*manchester UK*/
+        left: 45.975%;
+        top: 26.85%;
+      }
+      #hotspot2 {/*miami FL*/
+        left: 23.975%;
+        top: 49.85%;
+      }
+      #hotspot3 {/*Kraków, Poland*/
+        left: 52.975%;
+        top: 34%;
+      }
+      #hotspot4 {/*Little Rock, Arkansas*/
+        left: 20.975%;
+        top: 44.85%;
+      }
+      #hotspot5 {/*Geneva, Switzerland*/
+        left: 47.999%;
+        top: 37.85%;
+      }
+      #hotspot6 {/*Fresno, California, US*/
+        left: 13.975%;
+        top: 43.85%;
+      }
+      #hotspot7 {/*New South Wales, Australia*/
+        right: 10.975%;
+        top: 82.85%;
+      }
+
+
+      .popup__inner {
+        padding: 20px 15px;
+      }
+      .map__hotspot:focus .popup {
+        display: inline-block;
+      }
+      .popup__title {
+        margin: 0;
+      }
+      .popup__text {
+        margin: 0;
+        height: 0;
+        overflow: hidden;
+      }
+      .popup__text br {
+        display: none;
+      }
+      .map__hotspot:focus .popup__text {
+        height: auto;
+      }
+      .description {
+        background: #c9c8ff;
+      }
+      .description__title {
+        margin: 0;
+        padding: 15px 0;
+        background: #fff;
+        text-align: center;
+        font-size: 25px;
+        color: #011852;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+      .description__content {
+        margin: 30px 0;
+        padding: 20px;
+        border: 9px solid #fff;
+        border-radius: 4px;
+      }
+      .description__content p {
+        margin: 0;
+        font-size: 20px;
+        line-height: 1.2;
+        color: #00174f;
+      }
+
+      @media screen and (min-width: 768px) {
+        .map__inner {
+          position: relative;
+          height: 0;
+          padding-bottom: 52.91666666666667%;
+        }
+        .map__img {
+          display: block;
+          max-width: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+        .map__hotspot {
+          position: absolute;
+          width: 8px;
+          height: 8px;
+          border-radius: 50%;
+        }
+        .map__hotspot:hover,
+        .map__hotspot:focus {
+          background: #fff;
+        }
+        .popup {
+          width: 0;
+          height: 0;
+          overflow: hidden;
+          opacity: 0;
+          -webkit-transition: opacity 0.5s ease-in-out;
+                  transition: opacity 0.5s ease-in-out;
+          position: absolute;
+        }
+        .popup__inner {
+          display: inline-block;
+          white-space: nowrap;
+          background:#c9c8ff;
+          border: 9px solid #fff;
+          border-radius: 4px;
+        }
+        .map__hotspot:focus .popup {
+          opacity: 1;
+          width: auto;
+          height: auto;
+        }
+        .popup--left-top {
+          right: 20px;
+          bottom: -1px;
+        }
+        .popup--right-top {
+          left: 20px;
+          bottom: -1px;
+        }
+        .popup--left-bottom {
+          right: 20px;
+          top: -1px;
+        }
+        .popup--right-bottom {
+          left: 20px;
+          top: -1px;
+        }
+        .popup__text {
+          height: auto;
+        }
+        .popup__text br {
+          display: block;
+        }
+        .description__content p {
+          font-size: 30px;
+        }
+      }
+
+table .merchimage{
+  width: 40%;
+  height: auto;
+}
+
+
+
+/*FORM------------------------------------------*/
+table #form{
+  margin:auto;
+  width: 60%;
+}
+
+

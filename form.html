@@ -1,0 +1,267 @@
+<!DOCTYPE html >
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <!-- Load an icon library to show a hamburger menu on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      body{
+
+        background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("img/bandDark.jpg");
+        background-size: auto 100%;
+      }
+      
+    </style>
+  </head>
+  <body>
+
+   <script src="script.js"></script>
+    <!--nav bar-->
+    <div class="topnav" id="navbar">
+        <a href="index.html" class="show">
+          <img src="img/AtlanticLogo.png" id="logo">
+          HOME
+        </a>
+        <a href="javascript:void(0);" class="icon collapsible" onclick="changeNav()">
+          <i class="fa fa-bars"></i>
+        </a>
+      <div id="subnav" class="transform">
+        <a href="music.html">MUSIC</a>
+        <a href="news.html">NEWS</a>
+        <a href="socialmedia.html">SOCIAL MEDIA</a>
+        <a href="store.html" class="selected">STORE</a>
+        <a href="tour.html">TOUR</a>
+        <a href="technologyprogram.html">TECHNOLOGY PROGRAM</a>
+        <a href="TSAChapter.html">OUR TSA CHAPTER</a>
+      </div>
+    </div>
+
+      <header>
+        <h1><br/>Fill out the form below and click "order now" to order</h1>
+
+    </header>
+
+    <!--<form id="beanform" action="http://www.starbuzzcoffee.com/processorder.php" method="post">-->
+      <table id="form" align="center">
+        <!--<tr>
+          <th>Choose your beans:</th>
+          <td>
+            <select name="beans">
+              <option value="House Blend">House Blend</option>
+              <option value="Bolivia">Shade Grown Bolivia Supremo</option>
+              <option value="Guatemala">Organic Guatemala</option>
+              <option value="Kenya">Kenya</option>
+            </select>
+          </td>
+        </tr>
+
+        <tr>
+          <th>Type:</th>
+          <td>
+            <input type="radio" name="beantype" value="whole" id="whole" />
+            Whole bean
+            <br />
+            <input type="radio" name="beantype" value="ground" id="ground" checked="checked" /> 
+            Ground
+          </td>
+        </tr>-->
+      <form action="formresult.html" method="post">
+	    <tr>
+          <th>Extras:</th>
+          <td>
+            <input type="checkbox" name="extras[]" value="giftwrap" id="giftwrap" />
+            Gift wrap
+            <br />
+            <input type="checkbox" name="extras[]" value="catalog" id="catalog" checked="checked" />
+            Include catalog with order
+          </td>
+        </tr>
+
+        <tr>
+          <th>Products:</th>
+          <td>
+            <input type="checkbox" name="products[]" value="T-Shirt" id="T-Shirt" />
+            T-Shirt ($25.99)
+            <br />
+              &nbsp&nbsp&nbsp&nbsp<input type="radio" name="tsize" value="T-Shirt small" id="T-Shirt small" />
+              Small
+              <br />
+              &nbsp&nbsp&nbsp&nbsp<input type="radio" name="tsize" value="T-Shirt Medium" id="T-Shirt Medium" />
+              Medium
+              <br />
+              &nbsp&nbsp&nbsp&nbsp<input type="radio" name="tsize" value="T-Shirt Large" id="T-Shirt Large" />
+              Large
+              <br />
+              &nbsp&nbsp&nbsp&nbsp<input type="radio" name="tsize" value="T-Shirt XL" id="T-Shirt XL" />
+              Extra Large
+              <br />
+            <input type="checkbox" name="products[]" value="Hoodie" id="Hoodie" />
+            Long Sleeve Shirt ($34.99)
+            <br />
+              &nbsp&nbsp&nbsp&nbsp<input type="radio" name="tsize" value="Hoodie small" id="Hoodie small" />
+              Small
+              <br />
+              &nbsp&nbsp&nbsp&nbsp<input type="radio" name="tsize" value="Hoodie Medium" id="Hoodie Medium" />
+              Medium
+              <br />
+              &nbsp&nbsp&nbsp&nbsp<input type="radio" name="tsize" value="Hoodie Large" id="Hoodie Large" />
+              Large
+              <br />
+              &nbsp&nbsp&nbsp&nbsp<input type="radio" name="tsize" value="Hoodie XL" id="Hoodie XL" />
+              Extra Large
+              <br />          
+
+            <input type="checkbox" name="products[]" value="Hoodie" id="Hoodie" />
+            Joggers ($39.99)
+            <br />
+              &nbsp&nbsp&nbsp&nbsp<input type="radio" name="tsize" value="Hoodie small" id="Hoodie small" />
+              Small
+              <br />
+              &nbsp&nbsp&nbsp&nbsp<input type="radio" name="tsize" value="Hoodie Medium" id="Hoodie Medium" />
+              Medium
+              <br />
+              &nbsp&nbsp&nbsp&nbsp<input type="radio" name="tsize" value="Hoodie Large" id="Hoodie Large" />
+              Large
+              <br />
+              &nbsp&nbsp&nbsp&nbsp<input type="radio" name="tsize" value="Hoodie XL" id="Hoodie XL" />
+              Extra Large
+              <br />          
+            <input type="checkbox" name="products[]" value="Mug" id="Mug" />
+            Mug ($19.99)
+            <br />
+            <input type="checkbox" name="products[]" value="Water Bottle" id="Water Bottle" />
+            Water Bottle ($15.99)
+            <br />
+            <input type="checkbox" name="products[]" value="Poster" id="Poster" />
+            Poster ($9.99)
+          </td>
+        </tr>
+
+        <tr>
+          <th>Tickets:</th>
+          <td>
+            <input type="checkbox" name="tour[]" value="t1" id="t1" />
+            March 10, 2019 - Manchester Arena ($120)
+            <br />
+            <input type="checkbox" name="tour[]" value="t2" id="t2" />
+            March 20, 2019 - Hard Rock Stadium ($100)
+            <br /> 
+            <input type="checkbox" name="tour[]" value="t3" id="t3" />
+            April 7, 2019 - Tauron Arena ($110)
+            <br />      
+            <input type="checkbox" name="tour[]" value="t4" id="t4" />
+            April 27, 2019 - Verizon Arena ($100)
+            <br />           
+            <input type="checkbox" name="tour[]" value="t5" id="t5" />
+            May 10, 2019 - Palexpo ($120)
+            <br />    
+            <input type="checkbox" name="tour[]" value="t6" id="t6" />
+            May 19, 2019 - Save Mart Center ($100)
+            <br />    
+            <input type="checkbox" name="tour[]" value="t7" id="t7" />
+            May 19, 2019 - Qudos Bank Arena ($120)
+            <br />   
+          </td>
+        </tr>
+
+                <tr>
+          <th>Albums:</th>
+          <td>
+            <input type="checkbox" name="tour[]" value="t1" id="t1" />
+            Davy Jones’ Locker ($13.99)
+            <br />
+            <input type="checkbox" name="tour[]" value="t2" id="t2" />
+            Tidal Wave ($10.99)
+            <br /> 
+            <input type="checkbox" name="tour[]" value="t3" id="t3" />
+            Ocean Sounds ($8.99)
+            <br />      
+            
+          </td>
+        </tr>
+
+        <tr>
+          <th>Ship to:</th>
+            <td>
+              <table>
+                <tr>
+                  <td>Name:</td>
+                  <td>
+                    <input type="text" name="name" id="name" value="" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Address:</td>
+                  <td>
+                    <input type="text" name="address" id="address" value="" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>City:</td>
+                  <td>
+                    <input type="text" name="city" id="city" value="" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>State:</td>
+                  <td>
+                    <input type="text" name="state" id="state" value="" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Zip:</td>
+                  <td>
+                    <input type="text" name="zip" id="zip" value="" />
+                  </td>
+                </tr>
+                <tr>
+                <td>Email</td>
+                  <td>
+                    <input type="text" name="email" id="zip" value="" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+	  </tr>
+
+    <tr>
+          <th>Payment: </th>
+            <td>
+              <table>
+                <tr>
+                  <td>Card Number:</td>
+                  <td>
+                    <input type="text" name="cardno" id="cardno" value="" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>Security Code:</td>
+                  <td>
+                    <input type="text" name="cardsecurity" id="cardsecurity" value="" />
+                  </td>
+                </tr>
+              </table>
+            </td>
+	  </tr>
+
+          <tr>
+            <th>Customer Comments:</th>
+            <td>
+              <textarea name="comments" id="comments" rows="10" cols="48"></textarea>
+            </td>
+          </tr>
+
+          <tr>
+	    <th></th>
+            <td>
+              <input type="submit" value="Order Now" />
+            </td>
+          </tr>
+        </table>
+      </form>
+  </body>
+</html>
+
